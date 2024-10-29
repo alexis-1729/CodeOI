@@ -7,16 +7,16 @@
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
      <!-- app/Views/layouts/header.php -->
 <link href="<?= base_url('/css/output.css') ?>" rel="stylesheet">
-<script src="<?php base_url().'/js/script.js'?>"></script>
+<script src="http://localhost/codeOI/public/js/script.js"></script>
 
 </head>
-
+<body>
 <header class="bg-white">
   <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
     <div class="flex lg:flex-1">
       <a href="#" class="-m-1.5 p-1.5">
         <span class="sr-only">Your Company</span>
-        <img class="h-8 w-auto" src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600" alt="">
+        <img class="h-8 w-auto" src="http://localhost/codeOI/public/assets/codeoil.png" alt="">
       </a>
     </div>
     <div class="flex lg:hidden">
@@ -46,7 +46,9 @@
             From: "opacity-100 translate-y-0"
             To: "opacity-0 translate-y-1"
         -->
-        <div class="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
+        <div id="menuCurso" class="hidden absolute -left-8 top-full z-10 mt-3 w-screen 
+        max-w-md overflow-hidden rounded-3xl bg-white shadow-lg 
+        ring-1 ring-gray-900/5 opacity-0 translate-y-1  transition duration-300 ease-out">
           <div class="p-4">
             <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50">
               <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
@@ -142,7 +144,7 @@
       <a href="#" class="text-sm/6 font-semibold text-gray-900">Company</a>
     </div>
     <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-      <a href="#" class="text-sm/6 font-semibold text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
+      <a href="<?php echo base_url().'login/';?>" class="text-sm/6 font-semibold text-gray-900">Log in/Register<span aria-hidden="true">&rarr;</span></a>
     </div>
   </nav>
   <!-- Mobile menu, show/hide based on menu open state. -->
