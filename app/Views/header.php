@@ -14,7 +14,7 @@
 <header class="bg-white">
   <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
     <div class="flex lg:flex-1">
-      <a href="#" class="-m-1.5 p-1.5">
+      <a href="<?php echo base_url()?>" class="-m-1.5 p-1.5">
         <span class="sr-only">Your Company</span>
         <img class="h-8 w-auto" src="http://localhost/codeOI/public/assets/codeoil.png" alt="">
       </a>
@@ -58,7 +58,7 @@
                 </svg>
               </div>
               <div class="flex-auto">
-                <a href="<?php echo base_url()?>" class="block font-semibold text-gray-900">
+                <a href="<?php echo base_url()?>/Secciones/introduccion" class="block font-semibold text-gray-900">
                   Introduccion
                   <span class="absolute inset-0"></span>
                 </a>
@@ -72,7 +72,7 @@
                 </svg>
               </div>
               <div class="flex-auto">
-                <a href="<?php echo base_url()?>" class="block font-semibold text-gray-900">
+                <a href="<?php echo base_url()?>/Secciones/basico" class="block font-semibold text-gray-900">
                   Basicos
                   <span class="absolute inset-0"></span>
                 </a>
@@ -86,7 +86,7 @@
                 </svg>
               </div>
               <div class="flex-auto">
-                <a href="<?php echo base_url()?>" class="block font-semibold text-gray-900">
+                <a href="<?php echo base_url()?>/Secciones/intermedio" class="block font-semibold text-gray-900">
                   Intermedios
                   <span class="absolute inset-0"></span>
                 </a>
@@ -100,7 +100,7 @@
                 </svg>
               </div>
               <div class="flex-auto">
-                <a href="<?php echo base_url()?>" class="block font-semibold text-gray-900">
+                <a href="<?php echo base_url()?>/Secciones/avanzado" class="block font-semibold text-gray-900">
                   Avanzados
                   <span class="absolute inset-0"></span>
                 </a>
@@ -125,9 +125,9 @@
         </div>
       </div>
 
-      <a href="<?php echo base_url()?>" class="text-sm/6 font-semibold text-gray-900">Arena</a>
-      <a href="<?php echo base_url()?>" class="text-sm/6 font-semibold text-gray-900">Blog</a>
-      <a href="<?php echo base_url()?>" class="text-sm/6 font-semibold text-gray-900">Acerca de</a>
+      <a href="<?php echo base_url()?>/Arena/" class="text-sm/6 font-semibold text-gray-900">Arena</a>
+      <a href="<?php echo base_url()?>/Blog/" class="text-sm/6 font-semibold text-gray-900">Blog</a>
+      <a href="<?php echo base_url()?>/Acercade/" class="text-sm/6 font-semibold text-gray-900">Acerca de</a>
     </div>
     <div class="hidden lg:flex lg:flex-1 lg:justify-end">
       <a href="<?php echo base_url().'login/';?>" class="text-sm/6 font-semibold text-gray-900">Iniciar Sesion/Registrarse<span aria-hidden="true">&rarr;</span></a>
@@ -167,17 +167,17 @@
               </button>
               <!-- 'Product' sub-menu, show/hide based on menu state. -->
               <div class="mt-2 space-y-2" id="disclosure-1">
-                <a href="<?php echo base_url()?>" class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Introductorio</a>
-                <a href="<?php echo base_url()?>" class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Basicos</a>
-                <a href="<?php echo base_url()?>" class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Intermedios</a>
-                <a href="<?php echo base_url()?>" class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Avanzados</a>
+                <a href="<?php echo base_url()?>/Secciones/introduccion" class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Introductorio</a>
+                <a href="<?php echo base_url()?>/Secciones/basico" class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Basicos</a>
+                <a href="<?php echo base_url()?>/Secciones/intermedio" class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Intermedios</a>
+                <a href="<?php echo base_url()?>/Secciones/avanzado" class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Avanzados</a>
                 <a href="<?php echo base_url()?>" class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Inicio</a>
                 <a href="<?php echo base_url()?>" class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50">Contacto</a>
               </div>
             </div>
-            <a href="<?php echo base_url()?>" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Arena</a>
-            <a href="<?php echo base_url()?>" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Blog</a>
-            <a href="<?php echo base_url()?>" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Acerca de</a>
+            <a href="<?php echo base_url()?>/Arena/" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Arena</a>
+            <a href="<?php echo base_url()?>/Blog/" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Blog</a>
+            <a href="<?php echo base_url()?>Acercade/" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Acerca de</a>
           </div>
           <div class="py-6">
             <a href="<?php echo base_url()?>/login" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Iniciar sesion/Resgitrarse</a>
