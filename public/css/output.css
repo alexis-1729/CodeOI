@@ -1369,3 +1369,24 @@ video {
   }
 }
 
+
+.bg-nav{
+  background-color: #02735E;
+}
+
+.contenedor-form{
+  margin: 0 auto;
+  display: flex;
+  width: 500px;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  padding-top: 200px;
+}
+
+.titulo{
+  font-weight: 700;
+  font-size: 1.25rem; /* 20px */
+line-height: 1.75rem; /* 28px */
+}
+

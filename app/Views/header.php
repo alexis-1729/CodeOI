@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeOI</title>
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+     <script src="https://cdn.tailwindcss.com"></script> 
      <!-- app/Views/layouts/header.php -->
 <link href="<?= base_url('/css/output.css') ?>" rel="stylesheet">
 <script src="http://localhost/codeOI/public/js/script.js"></script>
 
 </head>
 <body>
-<header class="bg-white">
+<header class="bg-nav">
   <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
     <div class="flex lg:flex-1">
       <a href="<?php echo base_url()?>" class="-m-1.5 p-1.5">
@@ -125,12 +125,14 @@
         </div>
       </div>
 
-      <a href="<?php echo base_url()?>/Arena/" class="text-sm/6 font-semibold text-gray-900">Arena</a>
-      <a href="<?php echo base_url()?>/Blog/" class="text-sm/6 font-semibold text-gray-900">Blog</a>
-      <a href="<?php echo base_url()?>/Acercade/" class="text-sm/6 font-semibold text-gray-900">Acerca de</a>
+      <a href="<?php echo base_url()?>/Arena/" class="text-sm/6 font-semibold text-gray-900 hover:bg-gray-700 ">Arena</a>
+      <a href="<?php echo base_url()?>/Blog/" class="text-sm/6 font-semibold text-gray-900 hover:bg-gray-700">Blog</a>
+      <a href="<?php echo base_url()?>/Acercade/" class="text-sm/6 font-semibold text-gray-900 hover:bg-gray-700">Herramientas</a>
+
+      <a href="<?php echo base_url()?>/Acercade/" class="text-sm/6 font-semibold text-gray-900 hover:bg-gray-700">Acerca de</a>
     </div>
     <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-      <a href="<?php echo base_url().'login/';?>" class="text-sm/6 font-semibold text-gray-900">Iniciar Sesion/Registrarse<span aria-hidden="true">&rarr;</span></a>
+      <a href="<?php echo base_url().'login/';?>" class="text-sm/6 font-semibold text-gray-900 hover:bg-gray-700">Iniciar Sesion/Registrarse<span aria-hidden="true">&rarr;</span></a>
     </div>
   </nav>
   <!-- Mobile menu, show/hide based on menu open state. -->
