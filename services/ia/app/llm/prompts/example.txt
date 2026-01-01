@@ -1,0 +1,8 @@
+Proporcione un pequeño ejemplo ilustrativo para ayudar a comprender la idea.
+
+Instrucciones:
+- Use números pequeños o situaciones sencillas.
+- Explique la idea paso a paso conceptualmente.
+- NO generalice en un algoritmo completo.
+- NO proporcione código.
+- Deténgase una vez que la idea principal esté clara.

@@ -1,0 +1,8 @@
+Ofrezca una sola pista que ayude al estudiante a avanzar.
+
+Instrucciones:
+- Formule preguntas orientadoras en lugar de dar respuestas.
+- Señale la idea clave, no el método.
+- No explique el enfoque completo.
+- No mencione la complejidad ni las optimizaciones.
+- El estudiante debería seguir pensando después de leer esto.

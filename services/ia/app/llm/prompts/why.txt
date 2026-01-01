@@ -1,0 +1,7 @@
+Explique por qué esta idea funciona intuitivamente.
+
+Instrucciones:
+- Céntrese en el razonamiento, no en la implementación.
+- Utilice explicaciones de causa y efecto.
+- Evite el formalismo matemático.
+- No describa el método completo.

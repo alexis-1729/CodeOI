@@ -1,0 +1,8 @@
+Explique el concepto descrito en el contexto de la lección.
+
+Instrucciones:
+- Asuma que el estudiante está aprendiendo esta idea por primera vez.
+- Explique en qué consiste la idea y cuándo es útil.
+- Evite el código; utilice lenguaje natural y descripciones similares a pseudocódigo.
+- Céntrese en la claridad y la precisión.
+- No mencione algoritmos completos ni implementaciones finales.

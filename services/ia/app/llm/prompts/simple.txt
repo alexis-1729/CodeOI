@@ -1,0 +1,8 @@
+Explica el concepto de la forma más sencilla posible.
+
+Instrucciones:
+- Usa un lenguaje muy sencillo.
+- Supón que el estudiante es joven e inexperto.
+- Usa metáforas o ejemplos cotidianos.
+- Párrafos cortos.
+- Sin fórmulas, sin código, sin términos complejos.

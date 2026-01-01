@@ -1,0 +1,119 @@
+version: "3.9"
+
+services:
+
+  auth-service:
+    build:
+      context: ./services/auth
+    container_name: auth-service
+    ports:
+      - "8000:8000"
+    depends_on:
+      - auth-DB
+    env_file:
+      - ./services/auth/.env
+    networks:
+      - codenet
+    
+  auth-DB:
+    image: postgres:14
+    container_name: auth-DB
+    ports:
+      - "5433:5432"
+    volumes:
+      - auth-db-data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=authdb
+      - POSTGRES_USER=alexis1729
+      - POSTGRES_PASSWORD=Singer22jkM
+    networks:
+      - codenet
+
+  users:
+    build:
+      context: ./services/user
+    container_name: users
+    ports:
+      - "8001:8001"
+    depends_on:
+      - users-db
+    env_file:
+      - ./services/user/.env
+    networks:
+      - codenet
+    
+  users-db:
+    image: postgres:14
+    container_name: users-db
+    ports:
+      - "5434:5432"
+    volumes:
+      - users-db-data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=usersdb
+      - POSTGRES_USER=alexis1729
+      - POSTGRES_PASSWORD=Singer22jkM
+    networks:
+      - codenet
+
+  content:
+    build:
+      context: ./services/content
+    container_name: content
+    ports:
+      - "8002:8002"
+    depends_on:
+      - content-db
+    env_file:
+      - ./services/content/.env
+    networks:
+      - codenet
+    
+  content-db:
+    image: postgres:14
+    container_name: content-db
+    ports:
+      - "5435:5432"
+    volumes:
+      - content-db-data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=contentdb
+      - POSTGRES_USER=alexis1729
+      - POSTGRES_PASSWORD=Singer22jkM
+    networks:
+      - codenet
+
+  ia:
+    build:
+      context: ./services/ia
+    container_name: ia
+    ports:
+      - "8003:8003"
+    env_file:
+      - ./services/ia/.env
+    networks:
+      - codenet
+    
+  # ia-db:
+  #   image: postgres:14
+  #   container_name: ia-db
+  #   ports:
+  #     - "5435:5432"
+  #   volumes:
+  #     - ia-db-data:/var/lib/postgresql/data
+  #   environment:
+  #     - POSTGRES_DB=iadb
+  #     - POSTGRES_USER=alexis1729
+  #     - POSTGRES_PASSWORD=Singer22jkM
+  #   networks:
+  #     - codenet
+
+volumes:
+  content-db-data:
+  auth-db-data:
+  users-db-data:
+  # ia-db-data:
+
+networks:
+  codenet:
+    driver: bridge
